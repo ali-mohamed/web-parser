@@ -52,6 +52,8 @@ group :development do
   # Use Capistrano for deployment
   gem "capistrano", "~> 3.10", require: false
   gem "capistrano-rails", "~> 1.4", require: false
+  gem 'capistrano3-puma', require: false
+  gem 'capistrano-rvm'
 end
 
 group :test do

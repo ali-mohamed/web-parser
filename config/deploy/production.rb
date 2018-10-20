@@ -1,3 +1,11 @@
+set :stage, :production
+set :rails_env, :production
+set :rvm_ruby_version, '2.4.1'
+
+role :app, %w(ubuntu@34.219.24.238)
+role :web, %w(ubuntu@34.219.24.238)
+role :db,  %w(ubuntu@34.219.24.238), primary: true
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
