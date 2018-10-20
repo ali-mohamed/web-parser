@@ -7,7 +7,7 @@ set :user, 'ubuntu'
 set :use_sudo, true
 
 set :linked_files, fetch(:linked_files, []).push(
-  'config/database.yml', 'config/secrets.yml'
+  'config/database.yml', 'config/master.key'
 )
 set :linked_dirs, fetch(:linked_dirs, []).push(
   'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/media'
